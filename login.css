@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,300;1,500&display=swap');
+
+.login1 {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loginWrapper1 {
+    width: 70%;
+    height: 70%;
+    display: flex;
+  }
+  
+  .loginLeft1,
+  .loginRight1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .loginTitle1{
+      font-family: 'Urbanist';
+      font-size:50px;
+      color:#333;
+      font-weight: 300;
+      margin-top:15px;
+      margin-bottom:25px;
+  }
+
+  .loginc24Logo1{
+      margin-left:5px;
+      height:100px;
+      width:100px;
+      border-radius: 20px;
+  }
+  
+  .loginDesc1 {
+    font-size: 24px;
+    font-weight: 300;
+    color:darkgoldenrod
+  }
+  
+  .loginBox1{
+      height: 300px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  
+  .loginInput1{
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid gray;
+      font-size: 18px;
+      padding-left: 20px;
+  }
+  
+  .loginInput1:focus{
+      outline: 1px solid darkgoldenrod;
+  }
+  
+  .loginButton1{
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: #333;
+      color: darkgoldenrod;
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+  }
+  
+  .loginButton1:focus{
+    outline: none;
+  }
+  
+  .loginButton1:disabled{
+    cursor: not-allowed;
+  }
+  
+  .loginForgot1{
+      text-align: center;
+      color: gray;
+  }
+  
+  .loginRegisterButton1{
+      width: 60%;
+      align-self: center;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: darkgoldenrod;
+      color: rgb(222, 218, 218);
+      font-size: 20px;
+      font-weight: 500;
+      cursor: pointer;
+  }
