@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const Post = require("../models/Post")
+const User = require("../models/User")
 
 //create post
 router.post("/",async (req,res)=>{
@@ -76,9 +77,11 @@ router.get("/:id", async (req, res) => {
 router.get("/timeline/:userId", async (req, res) => {
     try {
       const currentUser = await User.findById(req.params.userId);
+      //console.log(currentUser)
       const userPosts = await Post.find({ userId: currentUser._id });
+      //console.log(userPosts);
       const friendPosts = await Promise.all(
-        currentUser.followings.map((friendId) => {
+        currentUser.following.map((friendId) => {
           return Post.find({ userId: friendId });
         })
       );
